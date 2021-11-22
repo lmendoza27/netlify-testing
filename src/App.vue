@@ -1,33 +1,34 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/yo">Yo</router-link>
+
+<div class="nombre">
+  <router-link to="/" class="no"> Luis Angel Mendoza Chate</router-link>
+</div>
+
+      <div class="contenido">
+      <router-link to="/" class="direccon">Projects</router-link> 
+      <router-link to="/about" class="direccon">About</router-link> 
+      <router-link to="/yo" class="direccon">Contact</router-link>
+      <!--<a href="https://api.whatsapp.com/send?phone=51902013952&text=holasas" target="_blank"> Hola</a>-->
+      </div>
     </div>
     <router-view />
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+export default {
+  name: "orange-page",
+  created: function () {
+    //document.body.style.backgroundColor = "black";
+  },
+  destroyed: function () {
+    document.body.style.backgroundColor = null;
+  },
+};
+</script>
 
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+<style lang="scss" src="../src/assets/css/header.scss" scoped>
 </style>

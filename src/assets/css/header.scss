@@ -1,0 +1,78 @@
+@import "global.scss";
+
+$prim: #FE0F18;
+
+
+
+.no {
+    color:inherit;
+}
+
+#nav {
+//background-color: #42378f;
+//background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+background-image: linear-gradient(315deg, black 0%, white 44%);
+position: fixed;
+width: 100%;
+padding: 40px 40px 40px 20px;
+top: 0;
+left: 0px;
+}
+
+#app {
+margin: 0;
+padding: 0;
+}
+
+.contenido {
+    position: absolute;
+    right: 120px;
+    color: inherit;
+    display: inline-block;
+}
+
+.direccon {
+    color: white;
+    text-decoration: none;
+    font-family: 'M Ponderosa';
+    font-size: 25px;
+    margin-left: 20px;
+   
+}
+
+.direccon:hover {
+    color: yellow;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.nombre {
+    display: inline-block;
+    width: 320px;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2.5em;
+    color: black;
+    font-family: 'La Gilda';
+}
+.nombre:hover {
+    text-decoration: underline overline;
+    cursor:crosshair;   
+
+}
+
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
